@@ -1,0 +1,26 @@
+name: ⚖️ Balance feedback
+description: Something is too strong, too weak, too expensive or too hard
+title: "[Balance] "
+labels: ["balance"]
+body:
+  - type: input
+    id: thing
+    attributes:
+      label: What is unbalanced?
+      placeholder: "e.g. Sniper Noob, Hard mode wave 30, Golden crate price"
+    validations:
+      required: true
+  - type: dropdown
+    id: direction
+    attributes:
+      label: It is...
+      options: [Too strong / too easy, Too weak / too hard, Too expensive, Too cheap, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What happened that made you feel this way? What would feel fair?
+    validations:
+      required: true
